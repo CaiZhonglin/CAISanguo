@@ -12,6 +12,8 @@ public class GameMgr : MonoBehaviour {
     void Start () {
         StartGame.onClick.AddListener(() => {
             Debug.Log("点击开始游戏");
+            BaseGameInfo game = new BaseGameInfo();
+            game.EnemyLv = 1;
             SceneManager.LoadScene("game");
         });
     }
